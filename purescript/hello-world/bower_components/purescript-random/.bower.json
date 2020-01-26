@@ -1,0 +1,33 @@
+{
+  "name": "purescript-random",
+  "homepage": "https://github.com/purescript/purescript-random",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/purescript/purescript-random.git"
+  },
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "output",
+    "test",
+    "bower.json",
+    "package.json"
+  ],
+  "dependencies": {
+    "purescript-effect": "^2.0.0",
+    "purescript-integers": "^4.0.0",
+    "purescript-math": "^2.1.1"
+  },
+  "version": "4.0.0",
+  "_release": "4.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v4.0.0",
+    "commit": "75e6b21edbe0eec78c28ff3bd8265998f2ea0b45"
+  },
+  "_source": "https://github.com/purescript/purescript-random.git",
+  "_target": "^4.0.0",
+  "_originalSource": "purescript-random"
+}

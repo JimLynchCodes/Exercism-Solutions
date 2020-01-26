@@ -1,0 +1,40 @@
+{
+  "name": "purescript-nonempty",
+  "homepage": "https://github.com/purescript/purescript-nonempty",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/purescript/purescript-nonempty.git"
+  },
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "output",
+    "test",
+    "bower.json",
+    "package.json"
+  ],
+  "dependencies": {
+    "purescript-control": "^4.0.0",
+    "purescript-foldable-traversable": "^4.0.0",
+    "purescript-maybe": "^4.0.0",
+    "purescript-prelude": "^4.0.0",
+    "purescript-tuples": "^5.0.0",
+    "purescript-unfoldable": "^4.0.0"
+  },
+  "devDependencies": {
+    "purescript-assert": "^4.0.0",
+    "purescript-console": "^4.0.0"
+  },
+  "version": "5.0.0",
+  "_release": "5.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v5.0.0",
+    "commit": "36ca3b2fa6d98b1c9d2ee05643341e496fbeab57"
+  },
+  "_source": "https://github.com/paf31/purescript-nonempty.git",
+  "_target": "^5.0.0",
+  "_originalSource": "purescript-nonempty"
+}

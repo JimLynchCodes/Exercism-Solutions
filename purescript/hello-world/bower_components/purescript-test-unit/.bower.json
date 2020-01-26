@@ -1,0 +1,40 @@
+{
+  "name": "purescript-test-unit",
+  "license": "LGPL-3.0+",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bodil/purescript-test-unit.git"
+  },
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output"
+  ],
+  "dependencies": {
+    "purescript-aff": "^5.0.0",
+    "purescript-either": "^4.0.0",
+    "purescript-prelude": "^4.0.0",
+    "purescript-effect": "^2.0.0",
+    "purescript-quickcheck": "^6.0.0",
+    "purescript-free": "^5.0.0",
+    "purescript-strings": "^4.0.0",
+    "purescript-lists": "^5.0.0",
+    "purescript-js-timers": "^4.0.0",
+    "purescript-avar": "^3.0.0"
+  },
+  "homepage": "https://github.com/bodil/purescript-test-unit",
+  "version": "15.0.0",
+  "_release": "15.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v15.0.0",
+    "commit": "351c55b632e0c0ebffae05837909995a03de3406"
+  },
+  "_source": "https://github.com/bodil/purescript-test-unit.git",
+  "_target": "^15.0.0",
+  "_originalSource": "purescript-test-unit"
+}

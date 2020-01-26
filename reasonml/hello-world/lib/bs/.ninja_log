@@ -1,0 +1,14 @@
+# ninja log v5
+# start_time end_time mtime command hash
+0	13	1579456350847955231	HelloWorld.cmi	ad3ef201792eac44
+0	121	1579456350957450143	src/HelloWorld.reast	c2f81f15f21536d6
+0	121	1579456350957431727	src/HelloWorld.reiast	fbd4145e27f3121f
+0	121	1579456350957468014	__tests__/HelloWorld_test.reast	bf57f164f88abb94
+121	126	1579456350963586731	src/HelloWorld.d	f612480d37e9d31f
+121	127	1579456350963587244	__tests__/HelloWorld_test.d	d005bd8795fb4de6
+126	135	1579456350971950623	src/HelloWorld-HelloWorld.cmi	8428366f179b53df
+135	145	1579456350981947840	src/HelloWorld-HelloWorld.cmj	e56e1330b870fb16
+135	145	1579456350981947840	/Users/jim/Exercism/reasonml/hello-world/src/HelloWorld.bs.js	e56e1330b870fb16
+145	156	1579456350992671652	__tests__/HelloWorld_test-HelloWorld.cmj	9d4e2966ddd97b47
+145	156	1579456350992671652	__tests__/HelloWorld_test-HelloWorld.cmi	9d4e2966ddd97b47
+145	156	1579456350992671652	/Users/jim/Exercism/reasonml/hello-world/__tests__/HelloWorld_test.bs.js	9d4e2966ddd97b47

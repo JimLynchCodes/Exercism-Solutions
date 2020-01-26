@@ -1,0 +1,32 @@
+{
+  "name": "purescript-refs",
+  "homepage": "https://github.com/purescript/purescript-refs",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/purescript/purescript-refs.git"
+  },
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "output",
+    "test",
+    "bower.json",
+    "package.json"
+  ],
+  "dependencies": {
+    "purescript-effect": "^2.0.0",
+    "purescript-prelude": "^4.0.0"
+  },
+  "version": "4.1.0",
+  "_release": "4.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v4.1.0",
+    "commit": "e8b175477661e433175e76548168290c40e0ce4b"
+  },
+  "_source": "https://github.com/purescript/purescript-refs.git",
+  "_target": "^4.0.0",
+  "_originalSource": "purescript-refs"
+}
