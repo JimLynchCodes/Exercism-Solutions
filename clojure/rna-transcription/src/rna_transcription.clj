@@ -13,5 +13,5 @@
   {:pre [(string? dna) (every? DNA-to-RNA dna)]
    :post [(string? %)]}
   (->> dna
-       (map #(or (DNA-to-RNA %) (throw (AssertionError.))))
+       (map #(DNA-to-RNA %))
        (apply str)))
