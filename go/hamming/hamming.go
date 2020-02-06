@@ -7,14 +7,16 @@ import (
 // Distance calculates the hamming distance of two DNA strands.
 func Distance(a, b string) (int, error) {
 
-	if len(a) != len(b) {
-		return -1, errors.New("strings not equal length")
+	aRunes, bRunes := []rune(a), []rune(b)
+
+	if len(aRunes) != len(bRunes) {
+		return 0, errors.New("strings not equal length")
 	}
 
-	distance := 0
+	var distance int
 
-	for i := 0; i < len(a); i++ {
-		if a[i] != b[i] {
+	for i := 0; i < len(aRunes); i++ {
+		if aRunes[i] != bRunes[i] {
 			distance++
 		}
 	}
