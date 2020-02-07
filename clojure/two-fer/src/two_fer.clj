@@ -1,4 +1,3 @@
-(ns two-fer)
 (ns two-fer
   (:require [clojure.spec.alpha :as s]))
 
