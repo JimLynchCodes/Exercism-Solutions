@@ -1,11 +1,6 @@
-(ns two-fer
-  (:require [clojure.spec.alpha :as s]))
-
-(s/fdef two-fer
-  :args nil
-  :ret string?)
+(ns two-fer)
 
 (defn two-fer
-  "Returns the \"One For\" string with the name passed in, otherwise \"me\"."
-  ([] "One for you, one for me.")
+  "Returns the \"One For\" string with the name passed in, otherwise \"you\"."
+  ([] (two-fer "you"))
   ([name] (str "One for " name ", one for me.")))
