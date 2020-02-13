@@ -1,0 +1,1 @@
+{"pathname":"H/HA/HAARG/local-lib-2.000024.tar.gz","name":"local::lib","provides":{"lib::core::only":{"file":"lib/lib/core/only.pm"},"local::lib":{"version":"2.000024","file":"lib/local/lib.pm"}},"dist":"local-lib-2.000024","version":"2.000024","target":"local::lib"}

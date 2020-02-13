@@ -1,0 +1,73 @@
+{
+   "abstract" : "Distribution with a rich set of tools built upon the Test2 framework.",
+   "author" : [
+      "Chad Granum <exodist@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 6.012, CPAN::Meta::Converter version 2.150010, CPAN::Meta::Converter version 2.133380",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Test2-Suite",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Test::Pod" : "1.41",
+            "Test::Spelling" : "0.12"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "B" : "0",
+            "Carp" : "0",
+            "Data::Dumper" : "0",
+            "Exporter" : "0",
+            "Importer" : "0.024",
+            "Module::Pluggable" : "2.7",
+            "Scalar::Util" : "0",
+            "Scope::Guard" : "0",
+            "Sub::Info" : "0.002",
+            "Term::Table" : "0.013",
+            "Test2::API" : "1.302158",
+            "Time::HiRes" : "0",
+            "overload" : "0",
+            "perl" : "5.008001",
+            "utf8" : "0"
+         },
+         "suggests" : {
+            "Sub::Name" : "0.11",
+            "Term::ReadKey" : "0",
+            "Term::Size::Any" : "0",
+            "Unicode::GCString" : "0",
+            "Unicode::LineBreak" : "0"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "http://github.com/Test-More/Test2-Suite/issues"
+      },
+      "repository" : {
+         "type" : "git",
+         "url" : "http://github.com/Test-More/Test2-Suite/"
+      }
+   },
+   "version" : "0.000129",
+   "x_generated_by_perl" : "v5.30.0",
+   "x_serialization_backend" : "Cpanel::JSON::XS version 4.12"
+}
