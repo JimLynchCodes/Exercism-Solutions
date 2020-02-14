@@ -1,1 +1,1 @@
-{}
+{"run-length-encoding-test" ["encode-string-with-no-single-characters" "encode-single-characters-without-count" "encode-empty-string" "consistency" "encode-string-with-single-and-mixed-characters" "encode-multiple-whitespace" "encode-lowercase"]}

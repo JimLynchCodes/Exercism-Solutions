@@ -5,11 +5,16 @@
   "takes a string of repeated elements and returns a loss-less REL compressed string of the elements and elments counts."
   [s]
   {:pre  [(string? s)]
-   :post [(string? %)]}
-  (->> s
-       (partition-by identity)
-       (map #(str (when-not (= 1 (count %)) (count %)) (first %)))
-       (apply str)))
+  ;  :post [(string? %)]}
+   :post [(any? %)]}
+  (let [result (->> s
+                    (partition-by identity)
+      ;  (map #(str (when-not (= 1 (count %)) (count %)) (first %)))
+      ;  (apply str)))
+                    )]
+    
+    (prn "result " result)
+    result))
 
 (defn- decode-chunk
   "takes vector from re-seq for a single number/letter pair (or a single char with no num) and returns decoded chunk.
