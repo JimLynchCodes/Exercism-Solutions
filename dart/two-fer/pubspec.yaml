@@ -1,0 +1,6 @@
+name: 'two_fer'
+version: 1.2.0
+environment:
+  sdk: '>=2.0.0 <3.0.0'
+dev_dependencies:
+  test: '<2.0.0'
