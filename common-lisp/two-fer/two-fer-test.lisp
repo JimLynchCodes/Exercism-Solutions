@@ -15,24 +15,24 @@
      (two-fer:twofer nil)))
 
 
-(define-test
-  a-name-given
-  (assert-equal
-    "One for Alice, one for me."
-    (two-fer:twofer "Alice")))
-
-
-(define-test
-    another-name-given
+  (define-test
+    a-name-given
     (assert-equal
-     "One for Bob, one for me."
-     (two-fer:twofer "Bob")))
+      "One for Alice, one for me."
+      (two-fer:twofer "Alice")))
 
-(define-test
-    no-name-given
-    (assert-equal
-     "One for you, one for me."
-     (two-fer:twofer)))
+
+  (define-test
+      another-name-given
+      (assert-equal
+      "One for Bob, one for me."
+      (two-fer:twofer "Bob")))
+
+  (define-test
+      no-name-given
+      (assert-equal
+      "One for you, one for me."
+      (two-fer:twofer)))
 
 #-xlisp-test
 (let ((*print-errors* t)

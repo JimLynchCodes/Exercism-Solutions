@@ -5,15 +5,19 @@
   "takes a string of repeated elements and returns a loss-less REL compressed string of the elements and elments counts."
   [s]
   {:pre  [(string? s)]
+   
+   
   ;  :post [(string? %)]}
    :post [(any? %)]}
   (let [result (->> s
                     (partition-by identity)
+                    
       ;  (map #(str (when-not (= 1 (count %)) (count %)) (first %)))
       ;  (apply str)))
                     )]
     
     (prn "result " result)
+    (just count first)
     result))
 
 (defn- decode-chunk
