@@ -1,5 +1,3 @@
-//Solution goes in Sources
-
 struct Raindrops {
     var sounds: String = ""
     init(_ n: Int) {

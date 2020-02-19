@@ -1,0 +1,11 @@
+g_std_incl = /Users/jim/Exercism/reasonml/raindrops/node_modules/bs-platform/lib/ocaml
+g_pkg_flg = -bs-package-name raindrops -bs-ns Raindrops
+src_root_dir = /Users/jim/Exercism/reasonml/raindrops
+bsc = /Users/jim/Exercism/reasonml/raindrops/node_modules/bs-platform/lib/bsc.exe
+bsdep = /Users/jim/Exercism/reasonml/raindrops/node_modules/bs-platform/lib/bsb_helper.exe
+warnings = -w -30-40+6+7+27+32..39+44+45+101 -warn-error +101
+bsc_flags = 
+ppx_flags = 
+g_dpkg_incls = -I /Users/jim/Exercism/reasonml/raindrops/node_modules/@glennsl/bs-jest/lib/ocaml
+g_ns = -bs-ns Raindrops
+bsb_dir_group = 0
