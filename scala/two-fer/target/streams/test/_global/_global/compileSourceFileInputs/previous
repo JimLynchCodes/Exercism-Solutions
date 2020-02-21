@@ -1,0 +1,1 @@
+["sbt.Task[scala.collection.immutable.Map[java.lang.String, scala.collection.Seq[scala.Tuple2[java.nio.file.Path, sbt.nio.FileStamp]]]]",{"2.12.8":{"hashes":[["/Users/jim/Exercism/scala/two-fer/src/test/scala/TwoferTest.scala","3d32ee403c3868c02509a750e48ab7389b94bafb"]],"lastModifiedTimes":[]}}]

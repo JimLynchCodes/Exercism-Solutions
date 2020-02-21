@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/jim/Exercism/scala/hello-world/src/test/scala/HelloWorldTest.scala:7:24: value should is not a member of Nothing[0m
+[0m[[0m[31merror[0m] [0m[0m    HelloWorld.hello() should be ("Hello, World!")[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

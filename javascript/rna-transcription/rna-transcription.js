@@ -6,7 +6,7 @@ const DNAtoRNA = {
 }
 
 export const toRna = (dna) => {
-  return dna.split('').map(char => {
-    return DNAtoRNA[char]
-  }).join('')
+  return [...dna]
+    .map(char => DNAtoRNA[char])
+    .join('')
 };
