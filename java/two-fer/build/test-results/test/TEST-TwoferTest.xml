@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TwoferTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-02-21T01:15:17" hostname="Jamess-Mac-mini.local" time="0.001">
+  <properties/>
+  <testcase name="noNameGiven" classname="TwoferTest" time="0.0"/>
+  <testcase name="aNameGiven" classname="TwoferTest" time="0.0"/>
+  <testcase name="anotherNameGiven" classname="TwoferTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
