@@ -1,17 +1,15 @@
 def convert(n):
 
     result = ''
-    dropMap = {
-        3: 'Pling',
-        5: 'Plang',
-        7: 'Plong'
-    }
+    
+    dropTypes = [
+        (3, 'Pling'),
+        (5, 'Plang'),
+        (7, 'Plong'),
+    ]
 
-    for dropNum in dropMap:
-        if (n % dropNum == 0):
-            result = result + dropMap[dropNum]
+    for dropType in dropTypes:
+        if (n % dropType[0] == 0):
+            result = result + dropType[1]
 
-    if (result == ''):
-        result = str(n)
-
-    return result
+    return result or str(n)
