@@ -13,4 +13,4 @@ const ORBITAL_PERIODS = {
   'neptune': 164.79132,
 }
 
-export const age = (planet, seconds) => parseFloat((seconds / SECONDS_IN_EARTH_YEAR / ORBITAL_PERIODS[planet]).toFixed(2))
+export const age = (planet, seconds) => Number((seconds / SECONDS_IN_EARTH_YEAR / ORBITAL_PERIODS[planet]).toFixed(2))
