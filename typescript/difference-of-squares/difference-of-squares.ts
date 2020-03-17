@@ -1,36 +1,27 @@
- export default class Squares {
-     
-    squareOfSum: number = 0
+export default class Squares {
+
+    squareOfSum: number
+    sumOfSquares: number
+    difference: number
 
     constructor(private n: number) {
-
-        console.log('getting num: ', n)
-        this.getSquareOfSum(n)
-        console.log('new num: ', n)
-        
-
+        this.squareOfSum = this.getSumOfSmallerOrEqualIntegers(n) ** 2
+        this.sumOfSquares = this.getSumOfSquares(n)
+        this.difference = this.squareOfSum - this.sumOfSquares
     }
 
-    getSquareOfSum(n: number): number {
-        console.log('now: ', n)
-        if (n === 1) {
+    getSumOfSmallerOrEqualIntegers(n: number): number {
+        if (!n)
+            return n
 
-            console.log('here', n)
-            return n**2
-        }
-        
-        console.log('now2: ', n)
-
-        this.
-        return (n + this.getSquareOfSum((n-1)))
+        return n + this.getSumOfSmallerOrEqualIntegers(n - 1)
     }
 
-    sumOfSquares() {
+    getSumOfSquares(n: number): number {
+        if (!n)
+            return n
 
+        return n ** 2 + this.getSumOfSquares(n - 1)
     }
-
-    difference() {
-
-    }
-
- }
+    
+}
