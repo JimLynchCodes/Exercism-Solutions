@@ -2,7 +2,7 @@ module hello_world;
 
 string hello()
 {
-    return "Hello";
+    return "Hello, World!";
 }
 
 unittest
