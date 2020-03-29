@@ -34,7 +34,7 @@ describe('Pangram()', () => {
   });
 
   test('mixed case and punctuation', () => {
-    expect(isPangram('"Five quacking Zephyrs jolt my wax bed."')).toBe(true);
+    expect(isPangram("Five quacking Zephyrs jolt my wax bed.")).toBe(true);
   });
 
   test('case insensitive', () => {
