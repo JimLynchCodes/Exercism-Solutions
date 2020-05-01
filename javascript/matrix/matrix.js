@@ -1,9 +1,6 @@
-//
-// This is only a SKELETON file for the 'Matrix' exercise. It's been provided as a
-// convenience to get you started writing code faster.
-//
 
 let rows
+let columns
 
 export class Matrix {
 
@@ -11,22 +8,37 @@ export class Matrix {
 
     rows = inputString.split("\n").map(row => {
 
-      const match = row.match(/\S/g);
+      const cells = row.split(' ')
 
-      return match.map(char => {
-        return parseInt(char)
-      });
+      return cells.map(cell => {
+        return parseInt(cell)
+      })
 
-    });
+    })
+
+    columns = []
+
+    rows.forEach((row) => {
+
+      row.forEach((cell, i) => {
+
+        if (columns[i] === undefined)
+          columns[i] = []
+
+        columns[i].push(cell)
+
+      })
+
+    })
 
   }
 
   get rows() {
-
     return rows
   }
 
   get columns() {
-    return 'foo'
+    return columns
   }
+
 }
