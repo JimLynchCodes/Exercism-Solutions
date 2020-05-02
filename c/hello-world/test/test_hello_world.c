@@ -2,6 +2,9 @@
 #include "vendor/unity.h"
 #include "../src/hello_world.h"
 
+// Notes from Jim!
+// If it's not working you may need to run `make clean` and then just `make`.
+
 void setUp(void)
 {
 }

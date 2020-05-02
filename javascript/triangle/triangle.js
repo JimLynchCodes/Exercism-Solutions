@@ -1,34 +1,43 @@
+const SIDES_ON_A_TRIANGLE = 3
+
 export class Triangle {
 
-  constructor(a, b, c) {
-    this.validInput = this.validateInput(a, b, c)
-    this.uniqueSides = new Set([a, b, c])
+  constructor(sideA, sideB, sideC) {
+    this.validInput = this.validateInput(sideA, sideB, sideC)
+
+    this.matchingSides = 0
+
+    if (sideA === sideB && sideA === sideC)
+      this.matchingSides = SIDES_ON_A_TRIANGLE
+
+    else if (sideA === sideB || sideA === sideC || sideB === sideC)
+      this.matchingSides = SIDES_ON_A_TRIANGLE - 1
+
   }
 
   isEquilateral() {
-    return this.uniqueSides.size === 1 && this.validInput
+    return this.matchingSides === 3 && this.validInput
   }
 
   isIsosceles() {
-    return this.uniqueSides.size <= 2 && this.validInput
+    return this.matchingSides >= 2 && this.validInput
   }
 
   isScalene() {
-    return this.uniqueSides.size === 3 && this.validInput
+    return this.matchingSides === 0 && this.validInput
   }
 
-  validateInput(a, b, c) {
+  isAPoint(sideA, sideB, sideC) {
+    return sideA === 0 && sideB === 0 && sideC === 0
+  }
 
-    if (a === 0 && b === 0 && c == 0)
-      return false
+  isALine(sideA, sideB, sideC) {
+    const sorted = [sideA, sideB, sideC].sort()
+    return sorted[0] + sorted[1] < sorted[2]
+  }
 
-    const sorted = [a, b, c].sort()
-
-    if (sorted[0] + sorted[1] < sorted[2])
-      return false
-
-    return true 
-
+  validateInput(sideA, sideB, sideC) {
+    return !this.isAPoint(sideA, sideB, sideC) && !this.isALine(sideA, sideB, sideC)
   }
 
 }
