@@ -1,22 +1,22 @@
 
-export const steps = (num, stepCount) => {
+export const steps = (n, stepsTaken) => {
 
-  if (num <= 0)
+  if (n <= 0)
     throw new Error('Only positive numbers are allowed')
 
-  if (stepCount === undefined)
-    stepCount = 0
+  if (!stepsTaken)
+    stepsTaken = 0
 
-  if (num === 1) {
-    return stepCount
-  }
+  if (n === 1)
+    return stepsTaken
 
-  const isOdd = num % 2 === 1
+  const isEven = n % 2 === 0
 
-  if (isOdd)
-    return steps(3 * num + 1, ++stepCount)
+  if (isEven)
+    return steps(n / 2, ++stepsTaken)
 
-  if (!isOdd)
-    return steps(num / 2, ++stepCount)
+  else
+    return steps(n * 3 + 1, ++stepsTaken)
 
-};
+}
+
