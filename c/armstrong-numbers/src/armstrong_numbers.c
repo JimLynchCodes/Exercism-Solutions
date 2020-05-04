@@ -1,17 +1,24 @@
 #include "armstrong_numbers.h"
+#include "stdlib.h"
+#include "string.h"
+#include "stdio.h"
+#include "math.h"
 
-const is_armstrong_number(int)
+int is_armstrong_number(int n)
 {
-    unsigned int num = 123; //for example
-    unsigned int dig = count(num);
-    char arr[dig];
-    while (dig--)
+    char buffer[100];
+    snprintf(buffer, 100, "%d", n);
+
+    int len = strlen(buffer);
+    int i;
+    int sum = 0;
+
+    for (i = 0; i < len; i++)
     {
-        arr[dig] = num % 10;
-        num /= 10;
+        sum = sum + pow((buffer[i] - 48), len);
     }
 
-    printf(arr)
+    printf("ella sum: %d\n", sum);
 
-    return num
+    return sum == n;
 }
