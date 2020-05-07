@@ -2,7 +2,7 @@
 component {
 	
 	/**
-	 * @returns 
+	 * @returns date
 	 */
 	function add( required date birthdate ) {
 		
