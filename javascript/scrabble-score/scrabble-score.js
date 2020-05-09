@@ -31,6 +31,8 @@ const letterValues = {
 export const score = (word) => {
 
   return word.split('')
-    .reduce((sum, char) => sum += letterValues[char.toUpperCase()], 0)
+    .reduce(
+      (sum, char) => sum += letterValues[char.toUpperCase()], 
+      0)
 
 }
