@@ -83,7 +83,7 @@ fn the_only_multiple_of_0_is_0() {
 }
 
 #[test]
-#[ignore]
+
 fn the_factor_0_does_not_affect_the_sum_of_multiples_of_other_factors() {
     assert_eq!(3, sum_of_multiples(4, &[3, 0]))
 }

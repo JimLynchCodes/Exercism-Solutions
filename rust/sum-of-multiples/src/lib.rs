@@ -1,35 +1,26 @@
 pub fn sum_of_multiples(limit: u32, factors: &[u32]) -> u32 {
-    
-    println!(
-        "Sum the multiples of all of {:?} which are less than {}",
-        factors, limit
-    );
+    let mut sum = 0;
 
-    let mut sum: u32 = 0;
+    for num in 1..limit {
+        for factor in factors {
+            // Dereferencing so I can work with u32 directly
+            let factor = *factor;
 
-    for i in 1..limit {
-        println!("i is {}", i);
-        // println!("facs is {}", factors.);
-
-        for f in factors.iter() {
-            println!("operator: {} and {}", f, i);
-            println!("the mod: {}", i % f);
-
-            // Limit must be higher than factor to be considered a "multiple".
-            if &limit >= f && 
-            // divides evenly means it's a multiple
-            i % f == 0 &&
-            // allow zero as a factor but basically ignore it.
-            f != 0
-            {
-                sum += i;
-                println!("added to sum, new num: {}", sum);
+            if factor <= limit && evenly_divides(num, factor) {
+                sum += num;
                 break;
             }
-
-            println!("new sum: {}", sum);
         }
     }
 
     sum
+}
+
+#[inline]
+fn evenly_divides(num: u32, factor: u32) -> bool {
+    if factor == 0 {
+        return false;
+    }
+
+    num % factor == 0
 }
