@@ -8,9 +8,8 @@ export default class Words {
             .toLowerCase()
             .trim()
             .split(/[ \t\n]+/)
-            .map((word: string) => {
-                const lowercaseWord = word
-                entries.set(lowercaseWord, entries.get(lowercaseWord) + 1 || 1)
+            .forEach((word: string) => {
+                entries.set(word, entries.get(word) + 1 || 1)
             })
 
         return entries
