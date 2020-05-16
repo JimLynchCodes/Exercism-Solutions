@@ -2,17 +2,13 @@ export default class Words {
 
     count(input: string): object {
 
-        const entries = new Map()
-
-        input
+        return input
             .toLowerCase()
-            .trim()
             .split(/[ \t\n]+/)
-            .forEach((word: string) => {
-                entries.set(word, entries.get(word) + 1 || 1)
-            })
+            .reduce((acc: Map<string, number>, word: string) => {
+                return acc.set(word, (acc.get(word) || 0) + 1)
+            }, new Map())
 
-        return entries
     }
 
 }
