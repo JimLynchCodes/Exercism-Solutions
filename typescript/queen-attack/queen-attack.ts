@@ -20,8 +20,7 @@ export default class QueenAttack {
 
     constructor(positions: { white: number[], black: number[] }) {
 
-        if (positions.white[0] === positions.black[0] &&
-            positions.white[1] === positions.black[1])
+        if (this.occupySameSquare(positions.white, positions.black))
             throw new Error('Queens cannot share the same space')
 
         this.white = positions.white
@@ -82,22 +81,26 @@ export default class QueenAttack {
         if (this.occupySameSquare(attackingQueen, targetQueen))
             return true
 
-        if (direction === DiagonalDirection.UpAndToTheLeft)
-            if (attackingQueen[0] > 0 && attackingQueen[1] > 0)
-                return this.canQueensAttackInDirection([attackingQueen[0] - 1, attackingQueen[1] - 1], targetQueen, direction)
+        if (direction === DiagonalDirection.UpAndToTheLeft &&
+            attackingQueen[0] > 0 &&
+            attackingQueen[1] > 0)
+            return this.canQueensAttackInDirection([attackingQueen[0] - 1, attackingQueen[1] - 1], targetQueen, direction)
 
-        if (direction === DiagonalDirection.UpAndToTheRight)
-            if (attackingQueen[0] > 0 && attackingQueen[1] < (COLUMNS_IN_CHESSBOARD - 1))
-                return this.canQueensAttackInDirection([attackingQueen[0] - 1, attackingQueen[1] + 1], targetQueen, direction)
+        if (direction === DiagonalDirection.UpAndToTheRight &&
+            attackingQueen[0] > 0 &&
+            attackingQueen[1] < (COLUMNS_IN_CHESSBOARD - 1))
+            return this.canQueensAttackInDirection([attackingQueen[0] - 1, attackingQueen[1] + 1], targetQueen, direction)
 
 
-        if (direction === DiagonalDirection.DownAndToTheLeft)
-            if (attackingQueen[0] < (ROWS_IN_CHESSBOARD - 1) && attackingQueen[1] > 0)
-                return this.canQueensAttackInDirection([attackingQueen[0] + 1, attackingQueen[1] - 1], targetQueen, direction)
+        if (direction === DiagonalDirection.DownAndToTheLeft &&
+            attackingQueen[0] < (ROWS_IN_CHESSBOARD - 1) &&
+            attackingQueen[1] > 0)
+            return this.canQueensAttackInDirection([attackingQueen[0] + 1, attackingQueen[1] - 1], targetQueen, direction)
 
-        if (direction === DiagonalDirection.DownAndToTheRight)
-            if (attackingQueen[0] < (ROWS_IN_CHESSBOARD - 1) && attackingQueen[1] < (COLUMNS_IN_CHESSBOARD - 1))
-                return this.canQueensAttackInDirection([attackingQueen[0] + 1, attackingQueen[1] + 1], targetQueen, direction)
+        if (direction === DiagonalDirection.DownAndToTheRight &&
+            attackingQueen[0] < (ROWS_IN_CHESSBOARD - 1) &&
+            attackingQueen[1] < (COLUMNS_IN_CHESSBOARD - 1))
+            return this.canQueensAttackInDirection([attackingQueen[0] + 1, attackingQueen[1] + 1], targetQueen, direction)
 
         return false
 
