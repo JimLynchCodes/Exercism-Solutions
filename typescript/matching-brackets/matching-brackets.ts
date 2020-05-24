@@ -12,16 +12,16 @@ export default class MatchingBrackets {
 
     constructor(private str: string) {
 
-        const openedScopes: any = []
+        const openedScopes: string[] = []
 
-        this.str.split('').map((char: string) => {
+        this.str.split('').forEach((char: string) => {
 
             if (OPENING_BRACKETS.includes(char))
 
                 openedScopes.push(char)
 
 
-            if (CLOSING_BRACKETS.includes(char)) {
+            else if (CLOSING_BRACKETS.includes(char)) {
 
                 const indexOfLastOpener = OPENING_BRACKETS.indexOf(openedScopes[openedScopes.length - 1])
 
@@ -34,7 +34,7 @@ export default class MatchingBrackets {
                     openedScopes.pop()
 
                 else
-                
+
                     this.paired = false;
 
             }
