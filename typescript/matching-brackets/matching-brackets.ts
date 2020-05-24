@@ -8,9 +8,19 @@ const CLOSING_BRACKETS = [
 
 export default class MatchingBrackets {
 
-    paired = true
+    paired: boolean
 
     constructor(private str: string) {
+
+        this.paired = this.calculatePaired()
+
+    }
+
+    isPaired() {
+        return this.paired
+    }
+
+    calculatePaired() {
 
         const openedScopes: string[] = []
 
@@ -35,18 +45,14 @@ export default class MatchingBrackets {
 
                 else
 
-                    this.paired = false;
+                    return false;
 
             }
 
         })
 
-        this.paired = this.paired && openedScopes.length === 0
+        return this.paired && openedScopes.length === 0
 
-    }
-
-    isPaired() {
-        return this.paired
     }
 
 }
