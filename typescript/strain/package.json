@@ -20,7 +20,7 @@
     "typescript": "^3.6.4"
   },
   "scripts": {
-    "test": "yarn lint:types && jest --no-cache",
+    "test": "yarn lint:types && jest --no-cache --watch",
     "lint": "yarn lint:types && yarn lint:ci",
     "lint:types": "yarn tsc --noEmit -p .",
     "lint:ci": "eslint . --ext .tsx,.ts"
