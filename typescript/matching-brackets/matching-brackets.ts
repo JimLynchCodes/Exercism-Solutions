@@ -1,10 +1,8 @@
-const OPENING_BRACKETS = [
-    '[', '{', '('
-]
+import {Memoize} from 'typescript-memoize';
 
-const CLOSING_BRACKETS = [
-    ']', '}', ')'
-]
+const OPENING_BRACKETS = ['[', '{', '(']
+
+const CLOSING_BRACKETS = [']', '}', ')']
 
 export default class MatchingBrackets {
 
@@ -13,14 +11,19 @@ export default class MatchingBrackets {
     constructor(private str: string) {
 
         this.paired = this.calculatePaired()
+        
+        this.paired = this.calculatePaired()
 
     }
 
     isPaired() {
         return this.paired
     }
-
+    
+    @Memoize()
     calculatePaired() {
+
+        console.log('running...')
 
         const openedScopes: string[] = []
 

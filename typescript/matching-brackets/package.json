@@ -25,5 +25,7 @@
     "lint:types": "yarn tsc --noEmit -p .",
     "lint:ci": "eslint . --ext .tsx,.ts"
   },
-  "dependencies": {}
+  "dependencies": {
+    "typescript-memoize": "^1.0.0-alpha.3"
+  }
 }

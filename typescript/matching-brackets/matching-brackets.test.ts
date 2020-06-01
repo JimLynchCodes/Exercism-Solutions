@@ -46,7 +46,7 @@ describe("Matching Brackets", () => {
     expect(matchingBrackets.isPaired()).toBeTruthy()
   })
 
-  it.only("unopened closing brackets", () => {
+  it("unopened closing brackets", () => {
     const matchingBrackets = new MatchingBrackets("{[)][]}")
     expect(matchingBrackets.isPaired()).toBeFalsy()
   })

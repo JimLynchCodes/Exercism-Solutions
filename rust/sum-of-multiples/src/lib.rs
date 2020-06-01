@@ -3,7 +3,8 @@ pub fn sum_of_multiples(limit: u32, factors: &[u32]) -> u32 {
 
     for num in 1..limit {
         for factor in factors {
-            // Dereferencing so I can work with u32 directly
+            
+            // Dereferencing to work with u32 directly
             let factor = *factor;
 
             if factor <= limit && evenly_divides(num, factor) {
