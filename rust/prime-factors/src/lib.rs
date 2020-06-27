@@ -4,12 +4,17 @@ pub fn factors(n: u64) -> Vec<u64> {
         return vec![];
     }
 
+    let mut : Vec<u64> = vec![];
+
     for i in {1..n+1} {
         
         println!("i+1: {}", i);
         
+        if n % i == 0 {
 
-        let mut vec= vec![];
+        }
+
+
         // loop through all smaller numbers and see if there is a divisor
         for divisor in {1..n} {
             
