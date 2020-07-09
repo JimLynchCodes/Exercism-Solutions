@@ -1,12 +1,9 @@
 
-let rows
-let columns
-
 export class Matrix {
 
   constructor(inputString) {
 
-    rows = inputString.split("\n").map(row => {
+    this._rows = inputString.split("\n").map(row => {
 
       const cells = row.split(' ')
 
@@ -16,16 +13,16 @@ export class Matrix {
 
     })
 
-    columns = []
+    this._columns = []
 
-    rows.forEach((row) => {
+    this._rows.forEach((row) => {
 
       row.forEach((cell, i) => {
 
-        if (columns[i] === undefined)
-          columns[i] = []
+        if (this._columns[i] === undefined)
+          this._columns[i] = []
 
-        columns[i].push(cell)
+        this._columns[i].push(cell)
 
       })
 
@@ -34,11 +31,11 @@ export class Matrix {
   }
 
   get rows() {
-    return rows
+    return this._rows
   }
 
   get columns() {
-    return columns
+    return this._columns
   }
 
 }
