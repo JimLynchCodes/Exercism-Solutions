@@ -1,7 +1,14 @@
-
 export class Matrix {
 
   constructor(inputString) {
+
+    this.extractRows(inputString)
+
+    this.buildColumnsFromRows()
+
+  }
+
+  extractRows(inputString) {
 
     this._rows = inputString.split("\n").map(row => {
 
@@ -12,6 +19,10 @@ export class Matrix {
       })
 
     })
+
+  }
+
+  buildColumnsFromRows() {
 
     this._columns = []
 
