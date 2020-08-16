@@ -1,1 +1,9 @@
-{"track":"rust","exercise":"hello-world","id":"f14f64a470ae4be8921675abbbb362fd","url":"https://exercism.io/my/solutions/f14f64a470ae4be8921675abbbb362fd","handle":"JimTheMan","is_requester":true,"auto_approve":true}
+{
+    "track": "rust",
+    "exercise": "hello-world",
+    "id": "f14f64a470ae4be8921675abbbb362fd",
+    "url": "https://exercism.io/my/solutions/f14f64a470ae4be8921675abbbb362fd",
+    "handle": "JimTheMan",
+    "is_requester": true,
+    "auto_approve": true
+}
