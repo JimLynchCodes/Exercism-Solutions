@@ -2,36 +2,36 @@
 export default class GradeSchool {
 
     private students: string[] | undefined
-    private readonly roster: Map<string, string[]> = new Map()
+    private readonly roster: Map<number, string[]> = new Map()
 
-    studentRoster() {
-        return this.roster
+    studentRoster(): Map<string, string[]> {
+        const newMap = new Map()
+
+        for (const [key, val] of this.roster.entries())
+            newMap.set(key.toString(), [...val])
+
+        return newMap
     }
 
-    addStudent(_name: string, _grade: number) {
+    addStudent(name: string, grade: number): void {
 
-        this.students = this.roster.get('' + _grade)
+        this.students = this.roster.get(grade)
 
         if (this.students) {
-            this.students.push(_name)
+            this.students.push(name)
             this.students.sort()
-            this.roster.set('' + _grade, this.students)
+            this.roster.set(grade, this.students)
         }
-        else {
-            this.roster.set('' + _grade, [_name])
-            this.roster
-        }
+        else
+            this.roster.set(grade, [name])
 
     }
 
-    studentsInGrade(_grade: number): string[] {
+    studentsInGrade(grade: number): string[] {
 
-        const students = this.roster.get('' + _grade)
+        const students = this.roster.get(grade) || []
 
-        if (students)
-            return Object.assign([], students);
-
-        return []
+        return [...students]
 
     }
 
