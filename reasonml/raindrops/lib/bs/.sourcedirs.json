@@ -1,1 +1,1 @@
-{ "dirs" : [ "__tests__" , "src" ] , "pkgs" : [ [ "@glennsl/bs-jest" , "/Users/jim/Exercism/reasonml/raindrops/node_modules/@glennsl/bs-jest" ] , [ "bs-platform" , "/Users/jim/Exercism/reasonml/raindrops/node_modules/bs-platform" ] ] , "generated" : [] }
+{ "dirs" : [ "__tests__" , "src" ] , "pkgs" : [ [ "@glennsl/bs-jest" , "/Users/jlynch/Exercism/reasonml/raindrops/node_modules/@glennsl/bs-jest" ] , [ "bs-platform" , "/Users/jlynch/Exercism/reasonml/raindrops/node_modules/bs-platform" ] ] , "generated" : [] }

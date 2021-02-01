@@ -1,5 +1,15 @@
 # Hello World
 
+
+# Notes from Jim!
+If it's not working you may need to run `make clean` and then just `make`:
+```
+make clean
+make
+```
+
+
+
 The classical introductory exercise. Just say "Hello, World!".
 
 ["Hello, World!"](http://en.wikipedia.org/wiki/%22Hello,_world!%22_program) is

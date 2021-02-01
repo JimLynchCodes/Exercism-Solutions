@@ -2,5 +2,5 @@
 
 function helloWorld()
 {
-    return 'foo';
+    return 'Hello, World!';
 }

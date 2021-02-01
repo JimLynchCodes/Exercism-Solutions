@@ -1,9 +1,11 @@
 
-export const isPangram = (s) => {
+const ALPHABET_LENGTH = 26
 
-  const lowercase = s.toLowerCase()
-  const lettersOnly = lowercase.match(/[a-z]+/g) || []
-  const uniques = new Set(lettersOnly.join(''))
+export const isPangram = (str) => {
 
-  return uniques.size === 26
-};
+  const lowercase = str.toLowerCase()
+  const lettersOnly = lowercase.match(/[a-z]/g)
+  const uniques = new Set(lettersOnly)
+
+  return uniques.size === ALPHABET_LENGTH
+}

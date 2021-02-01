@@ -1,15 +1,14 @@
 export default class Words {
 
-    count(input: String): object {
+    count(input: string): object {
 
-        const entries = new Map()
+        return input
+            .toLowerCase()
+            .split(/[ \t\n]+/)
+            .reduce((acc: Map<string, number>, word: string) => {
+                return acc.set(word, (acc.get(word) || 0) + 1)
+            }, new Map())
 
-        input.trim().split(/[ \t\n]+/).map((word: string) => {
-            const lowercaseWord = word.toLowerCase()
-            entries.set(lowercaseWord, entries.get(lowercaseWord) + 1 || 1)
-        })
-
-        return entries
     }
 
 }

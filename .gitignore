@@ -1,1 +1,8 @@
 users/*
+
+
+**/node_modules
+
+# For CFML projects
+**/testbox
+
