@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/jim/Exercism/cpp/leap/leap.cpp" "/Users/jim/Exercism/cpp/leap/CMakeFiles/leap.dir/leap.cpp.o"
-  "/Users/jim/Exercism/cpp/leap/leap_test.cpp" "/Users/jim/Exercism/cpp/leap/CMakeFiles/leap.dir/leap_test.cpp.o"
-  "/Users/jim/Exercism/cpp/leap/test/tests-main.cpp" "/Users/jim/Exercism/cpp/leap/CMakeFiles/leap.dir/test/tests-main.cpp.o"
+  "/Users/jlynch/Exercism/cpp/leap/leap.cpp" "/Users/jlynch/Exercism/cpp/leap/CMakeFiles/leap.dir/leap.cpp.o"
+  "/Users/jlynch/Exercism/cpp/leap/leap_test.cpp" "/Users/jlynch/Exercism/cpp/leap/CMakeFiles/leap.dir/leap_test.cpp.o"
+  "/Users/jlynch/Exercism/cpp/leap/test/tests-main.cpp" "/Users/jlynch/Exercism/cpp/leap/CMakeFiles/leap.dir/test/tests-main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
