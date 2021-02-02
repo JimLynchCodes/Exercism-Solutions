@@ -1,0 +1,28 @@
+// Compiled by ClojureScript 1.10.773 {:target :nodejs}
+goog.provide('hello_world_test');
+goog.require('cljs.core');
+goog.require('hello_world');
+goog.require('cljs.test');
+hello_world_test.test_hello_world = (function hello_world_test$test_hello_world(){
+return cljs.test.test_var.call(null,hello_world_test.test_hello_world.cljs$lang$var);
+});
+hello_world_test.test_hello_world.cljs$lang$test = (function (){
+cljs.test.update_current_env_BANG_.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"testing-contexts","testing-contexts",-1485646523)], null),cljs.core.conj,"Testing hello-world function...");
+
+try{try{var values__1840__auto__ = (new cljs.core.List(null,hello_world.hello_world.call(null),(new cljs.core.List(null,"Hello, World!",null,(1),null)),(2),null));
+var result__1841__auto__ = cljs.core.apply.call(null,cljs.core._EQ_,values__1840__auto__);
+if(cljs.core.truth_(result__1841__auto__)){
+cljs.test.report.call(null,cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"file","file",-1269645878),new cljs.core.Keyword(null,"end-column","end-column",1425389514),new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"column","column",2078222095),new cljs.core.Keyword(null,"line","line",212345235),new cljs.core.Keyword(null,"expected","expected",1583670997),new cljs.core.Keyword(null,"end-line","end-line",1837326455),new cljs.core.Keyword(null,"actual","actual",107306363),new cljs.core.Keyword(null,"message","message",-406056002)],["/Users/jlynch/Exercism/clojurescript/hello-world/test/hello_world_test.cljs",30,new cljs.core.Keyword(null,"pass","pass",1574159993),9,7,cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),cljs.core.list(new cljs.core.Symbol("hello-world","hello-world","hello-world/hello-world",-1314181937,null)),"Hello, World!"),8,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__1840__auto__),null]));
+} else {
+cljs.test.report.call(null,cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"file","file",-1269645878),new cljs.core.Keyword(null,"end-column","end-column",1425389514),new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"column","column",2078222095),new cljs.core.Keyword(null,"line","line",212345235),new cljs.core.Keyword(null,"expected","expected",1583670997),new cljs.core.Keyword(null,"end-line","end-line",1837326455),new cljs.core.Keyword(null,"actual","actual",107306363),new cljs.core.Keyword(null,"message","message",-406056002)],["/Users/jlynch/Exercism/clojurescript/hello-world/test/hello_world_test.cljs",30,new cljs.core.Keyword(null,"fail","fail",1706214930),9,7,cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),cljs.core.list(new cljs.core.Symbol("hello-world","hello-world","hello-world/hello-world",-1314181937,null)),"Hello, World!"),8,(new cljs.core.List(null,new cljs.core.Symbol(null,"not","not",1044554643,null),(new cljs.core.List(null,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__1840__auto__),null,(1),null)),(2),null)),null]));
+}
+
+return result__1841__auto__;
+}catch (e2026){var t__1891__auto__ = e2026;
+return cljs.test.report.call(null,cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"file","file",-1269645878),new cljs.core.Keyword(null,"end-column","end-column",1425389514),new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"column","column",2078222095),new cljs.core.Keyword(null,"line","line",212345235),new cljs.core.Keyword(null,"expected","expected",1583670997),new cljs.core.Keyword(null,"end-line","end-line",1837326455),new cljs.core.Keyword(null,"actual","actual",107306363),new cljs.core.Keyword(null,"message","message",-406056002)],["/Users/jlynch/Exercism/clojurescript/hello-world/test/hello_world_test.cljs",30,new cljs.core.Keyword(null,"error","error",-978969032),9,7,cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),cljs.core.list(new cljs.core.Symbol("hello-world","hello-world","hello-world/hello-world",-1314181937,null)),"Hello, World!"),8,t__1891__auto__,null]));
+}}finally {cljs.test.update_current_env_BANG_.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"testing-contexts","testing-contexts",-1485646523)], null),cljs.core.rest);
+}});
+
+(hello_world_test.test_hello_world.cljs$lang$var = new cljs.core.Var(function(){return hello_world_test.test_hello_world;},new cljs.core.Symbol("hello-world-test","test-hello-world","hello-world-test/test-hello-world",71552555,null),cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"ns","ns",441598760),new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"file","file",-1269645878),new cljs.core.Keyword(null,"end-column","end-column",1425389514),new cljs.core.Keyword(null,"column","column",2078222095),new cljs.core.Keyword(null,"line","line",212345235),new cljs.core.Keyword(null,"end-line","end-line",1837326455),new cljs.core.Keyword(null,"arglists","arglists",1661989754),new cljs.core.Keyword(null,"doc","doc",1913296891),new cljs.core.Keyword(null,"test","test",577538877)],[new cljs.core.Symbol(null,"hello-world-test","hello-world-test",399832352,null),new cljs.core.Symbol(null,"test-hello-world","test-hello-world",-1577943981,null),"/Users/jlynch/Exercism/clojurescript/hello-world/test/hello_world_test.cljs",26,1,5,5,cljs.core.List.EMPTY,null,(cljs.core.truth_(hello_world_test.test_hello_world)?hello_world_test.test_hello_world.cljs$lang$test:null)])));
+
+//# sourceMappingURL=hello_world_test.js.map
