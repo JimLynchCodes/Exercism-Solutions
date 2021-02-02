@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/Users/jlynch/Exercism/cpp/reverse-string/reverse_string.cpp
+reverse_string.h
+/Users/jlynch/Exercism/cpp/reverse-string/reverse_string.h
+algorithm
+-
+
 /Users/jlynch/Exercism/cpp/reverse-string/reverse_string.h
 string
 -

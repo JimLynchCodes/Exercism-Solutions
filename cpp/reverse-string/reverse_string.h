@@ -3,13 +3,11 @@
 
 #include <string>
 
-using namespace std;
-
 namespace reverse_string
 {
 
-string reverse_string(string str);
+std::string reverse_string(std::string str);
 
-}
+} // namespace reverse_string
 
 #endif
