@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/Users/jim/Exercism/cpp/leap/leap.cpp
+/Users/jlynch/Exercism/cpp/leap/leap.cpp
 leap.h
-/Users/jim/Exercism/cpp/leap/leap.h
+/Users/jlynch/Exercism/cpp/leap/leap.h
 
-/Users/jim/Exercism/cpp/leap/leap.h
+/Users/jlynch/Exercism/cpp/leap/leap.h
 
-/Users/jim/Exercism/cpp/leap/leap_test.cpp
+/Users/jlynch/Exercism/cpp/leap/leap_test.cpp
 leap.h
-/Users/jim/Exercism/cpp/leap/leap.h
+/Users/jlynch/Exercism/cpp/leap/leap.h
 test/catch.hpp
-/Users/jim/Exercism/cpp/leap/test/catch.hpp
+/Users/jlynch/Exercism/cpp/leap/test/catch.hpp
 
-/Users/jim/Exercism/cpp/leap/test/catch.hpp
+/Users/jlynch/Exercism/cpp/leap/test/catch.hpp
 TargetConditionals.h
 -
 ciso646
@@ -284,7 +284,7 @@ string
 memory
 -
 Foundation/Foundation.h
-/Users/jim/Exercism/cpp/leap/test/Foundation/Foundation.h
+/Users/jlynch/Exercism/cpp/leap/test/Foundation/Foundation.h
 algorithm
 -
 random
@@ -467,4 +467,8 @@ algorithm
 -
 cassert
 -
+
+/Users/jlynch/Exercism/cpp/leap/test/tests-main.cpp
+catch.hpp
+/Users/jlynch/Exercism/cpp/leap/test/catch.hpp
 

@@ -1,0 +1,1 @@
+{:output-to "cljs-test-runner-out/cljs_test_runner.gen.js", :output-dir "cljs-test-runner-out", :target :nodejs, :main "cljs-test-runner.gen", :optimizations :none, :verbose nil}

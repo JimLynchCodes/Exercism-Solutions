@@ -3,7 +3,7 @@
 
 namespace leap
 {
-    bool is_leap_year(int foo);
+    bool is_leap_year(int year);
 }
 
 #endif // LEAP_H
