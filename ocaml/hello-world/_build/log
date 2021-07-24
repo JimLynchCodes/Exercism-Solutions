@@ -1,0 +1,121 @@
+# dune runtest
+# OCAMLPARAM: unset
+# Workspace root: /Users/jim/Exercism/ocaml/hello-world
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/jk/1yhv_4k52pg2y98xs_ct0dh80000gn/T/dune2c84b7.output 2> /dev/null
+# Auto-detected concurrency: 12
+# disable binary cache
+$ /Users/jim/.opam/default/bin/ocamlc.opt -config > /var/folders/jk/1yhv_4k52pg2y98xs_ct0dh80000gn/T/dune0545a5.output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dyn
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path = Some External "/Users/jim/.opam/default/lib/toplevel"
+#  ; ocaml_bin = External "/Users/jim/.opam/default/bin"
+#  ; ocaml = Ok External "/Users/jim/.opam/default/bin/ocaml"
+#  ; ocamlc = External "/Users/jim/.opam/default/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/Users/jim/.opam/default/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/Users/jim/.opam/default/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/Users/jim/.opam/default/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/Users/jim/.opam/default/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/Users/jim/.opam/default/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" : "/Users/jim/Exercism/ocaml/hello-world"
+#        ; "INSIDE_DUNE" :
+#            "/Users/jim/Exercism/ocaml/hello-world/_build/default"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/Users/jim/Exercism/ocaml/hello-world/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/Users/jim/Exercism/ocaml/hello-world/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/Users/jim/Exercism/ocaml/hello-world/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_path = [ External "/Users/jim/.opam/default/lib" ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.12.0"
+#      ; standard_library_default = "/Users/jim/.opam/default/lib/ocaml"
+#      ; standard_library = "/Users/jim/.opam/default/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "cc"
+#      ; ocamlc_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; ocamlopt_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; bytecomp_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; native_c_libraries = [ "-lm" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "macosx"
+#      ; asm = [ "clang"; "-arch"; "x86_64"; "-Wno-trigraphs"; "-c" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-apple-darwin19.3.0"
+#      ; target = "x86_64-apple-darwin19.3.0"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X029"
+#      ; cmi_magic_number = "Caml1999I029"
+#      ; cmo_magic_number = "Caml1999O029"
+#      ; cma_magic_number = "Caml1999A029"
+#      ; cmx_magic_number = "Caml1999Y029"
+#      ; cmxa_magic_number = "Caml1999Z029"
+#      ; ast_impl_magic_number = "Caml1999M029"
+#      ; ast_intf_magic_number = "Caml1999N029"
+#      ; cmxs_magic_number = "Caml1999D029"
+#      ; cmt_magic_number = "Caml1999T029"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /Users/jim/.opam/default/bin/ocamldep.opt -modules -impl hello_world.ml) > _build/default/.test.eobjs/hello_world.ml.d
+$ (cd _build/default && /Users/jim/.opam/default/bin/ocamldep.opt -modules -impl test.ml) > _build/default/.test.eobjs/test.ml.d
+$ (cd _build/default && /Users/jim/.opam/default/bin/ocamldep.opt -modules -intf hello_world.mli) > _build/default/.test.eobjs/hello_world.mli.d
+$ (cd _build/default && /Users/jim/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I .test.eobjs/byte -I /Users/jim/.opam/default/lib/base -I /Users/jim/.opam/default/lib/base/base_internalhash_types -I /Users/jim/.opam/default/lib/base/caml -I /Users/jim/.opam/default/lib/base/shadow_stdlib -I /Users/jim/.opam/default/lib/bytes -I /Users/jim/.opam/default/lib/oUnit -I /Users/jim/.opam/default/lib/ounit2 -I /Users/jim/.opam/default/lib/ounit2/advanced -I /Users/jim/.opam/default/lib/sexplib0 -I /Users/jim/.opam/default/lib/stdlib-shims -no-alias-deps -opaque -o .test.eobjs/byte/hello_world.cmi -c -intf hello_world.mli)
+$ (cd _build/default && /Users/jim/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I .test.eobjs/byte -I /Users/jim/.opam/default/lib/base -I /Users/jim/.opam/default/lib/base/base_internalhash_types -I /Users/jim/.opam/default/lib/base/caml -I /Users/jim/.opam/default/lib/base/shadow_stdlib -I /Users/jim/.opam/default/lib/bytes -I /Users/jim/.opam/default/lib/oUnit -I /Users/jim/.opam/default/lib/ounit2 -I /Users/jim/.opam/default/lib/ounit2/advanced -I /Users/jim/.opam/default/lib/sexplib0 -I /Users/jim/.opam/default/lib/stdlib-shims -no-alias-deps -opaque -o .test.eobjs/byte/test.cmo -c -impl test.ml)
+$ (cd _build/default && /Users/jim/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I .test.eobjs/byte -I .test.eobjs/native -I /Users/jim/.opam/default/lib/base -I /Users/jim/.opam/default/lib/base/base_internalhash_types -I /Users/jim/.opam/default/lib/base/caml -I /Users/jim/.opam/default/lib/base/shadow_stdlib -I /Users/jim/.opam/default/lib/bytes -I /Users/jim/.opam/default/lib/oUnit -I /Users/jim/.opam/default/lib/ounit2 -I /Users/jim/.opam/default/lib/ounit2/advanced -I /Users/jim/.opam/default/lib/sexplib0 -I /Users/jim/.opam/default/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -opaque -o .test.eobjs/native/hello_world.cmx -c -impl hello_world.ml)
+$ (cd _build/default && /Users/jim/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I .test.eobjs/byte -I .test.eobjs/native -I /Users/jim/.opam/default/lib/base -I /Users/jim/.opam/default/lib/base/base_internalhash_types -I /Users/jim/.opam/default/lib/base/caml -I /Users/jim/.opam/default/lib/base/shadow_stdlib -I /Users/jim/.opam/default/lib/bytes -I /Users/jim/.opam/default/lib/oUnit -I /Users/jim/.opam/default/lib/ounit2 -I /Users/jim/.opam/default/lib/ounit2/advanced -I /Users/jim/.opam/default/lib/sexplib0 -I /Users/jim/.opam/default/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -opaque -o .test.eobjs/native/test.cmx -c -impl test.ml)
+$ (cd _build/default && /Users/jim/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -o test.exe /Users/jim/.opam/default/lib/base/base_internalhash_types/base_internalhash_types.cmxa -I /Users/jim/.opam/default/lib/base/base_internalhash_types /Users/jim/.opam/default/lib/base/caml/caml.cmxa /Users/jim/.opam/default/lib/sexplib0/sexplib0.cmxa /Users/jim/.opam/default/lib/base/shadow_stdlib/shadow_stdlib.cmxa /Users/jim/.opam/default/lib/base/base.cmxa -I /Users/jim/.opam/default/lib/base /Users/jim/.opam/default/lib/ocaml/unix.cmxa -I /Users/jim/.opam/default/lib/ocaml /Users/jim/.opam/default/lib/stdlib-shims/stdlib_shims.cmxa /Users/jim/.opam/default/lib/ounit2/advanced/oUnitAdvanced.cmxa /Users/jim/.opam/default/lib/ounit2/oUnit.cmxa .test.eobjs/native/hello_world.cmx .test.eobjs/native/test.cmx)
+$ (cd _build/default && ./test.exe)
+> .
+> Ran: 1 tests in: 0.11 seconds.
+> OK
