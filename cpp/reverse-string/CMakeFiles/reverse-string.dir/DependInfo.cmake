@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/jlynch/Exercism/cpp/reverse-string/reverse_string.cpp" "/Users/jlynch/Exercism/cpp/reverse-string/CMakeFiles/reverse-string.dir/reverse_string.cpp.o"
-  "/Users/jlynch/Exercism/cpp/reverse-string/reverse_string_test.cpp" "/Users/jlynch/Exercism/cpp/reverse-string/CMakeFiles/reverse-string.dir/reverse_string_test.cpp.o"
-  "/Users/jlynch/Exercism/cpp/reverse-string/test/tests-main.cpp" "/Users/jlynch/Exercism/cpp/reverse-string/CMakeFiles/reverse-string.dir/test/tests-main.cpp.o"
+  "/Users/jim/Exercism/cpp/reverse-string/reverse_string.cpp" "/Users/jim/Exercism/cpp/reverse-string/CMakeFiles/reverse-string.dir/reverse_string.cpp.o"
+  "/Users/jim/Exercism/cpp/reverse-string/reverse_string_test.cpp" "/Users/jim/Exercism/cpp/reverse-string/CMakeFiles/reverse-string.dir/reverse_string_test.cpp.o"
+  "/Users/jim/Exercism/cpp/reverse-string/test/tests-main.cpp" "/Users/jim/Exercism/cpp/reverse-string/CMakeFiles/reverse-string.dir/test/tests-main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

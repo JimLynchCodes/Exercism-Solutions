@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/Users/jlynch/Exercism/cpp/reverse-string/reverse_string.cpp
+/Users/jim/Exercism/cpp/reverse-string/reverse_string.cpp
 reverse_string.h
-/Users/jlynch/Exercism/cpp/reverse-string/reverse_string.h
+/Users/jim/Exercism/cpp/reverse-string/reverse_string.h
 algorithm
 -
 
-/Users/jlynch/Exercism/cpp/reverse-string/reverse_string.h
+/Users/jim/Exercism/cpp/reverse-string/reverse_string.h
 string
 -
 
-/Users/jlynch/Exercism/cpp/reverse-string/reverse_string_test.cpp
+/Users/jim/Exercism/cpp/reverse-string/reverse_string_test.cpp
 reverse_string.h
-/Users/jlynch/Exercism/cpp/reverse-string/reverse_string.h
+/Users/jim/Exercism/cpp/reverse-string/reverse_string.h
 test/catch.hpp
-/Users/jlynch/Exercism/cpp/reverse-string/test/catch.hpp
+/Users/jim/Exercism/cpp/reverse-string/test/catch.hpp
 
-/Users/jlynch/Exercism/cpp/reverse-string/test/catch.hpp
+/Users/jim/Exercism/cpp/reverse-string/test/catch.hpp
 TargetConditionals.h
 -
 ciso646
@@ -288,7 +288,7 @@ string
 memory
 -
 Foundation/Foundation.h
-/Users/jlynch/Exercism/cpp/reverse-string/test/Foundation/Foundation.h
+/Users/jim/Exercism/cpp/reverse-string/test/Foundation/Foundation.h
 algorithm
 -
 random
@@ -471,4 +471,8 @@ algorithm
 -
 cassert
 -
+
+/Users/jim/Exercism/cpp/reverse-string/test/tests-main.cpp
+catch.hpp
+/Users/jim/Exercism/cpp/reverse-string/test/catch.hpp
 
