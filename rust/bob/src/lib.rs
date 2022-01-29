@@ -1,25 +1,26 @@
 const DEFAULT_RESPONSE: &str = "Whatever.";
-const RESPONSE_FOR_QUESTION: &str = "Sure.";
-const RESPONSE_FOR_SHOUTING: &str = "Whoa, chill out!";
-const RESPONSE_FOR_SHOUTED_QUESTION: &str = "Calm down, I know what I'm doing!";
-const RESPONSE_FOR_NOTHING: &str = "Fine. Be that way!";
+const RESPONSE_TO_QUESTION: &str = "Sure.";
+const RESPONSE_TO_YELLED: &str = "Whoa, chill out!";
+const RESPONSE_TO_YELLED_QUESTION: &str = "Calm down, I know what I'm doing!";
+const REPONSE_TO_NOTHING: &str = "Fine. Be that way!";
 
 pub fn reply(message: &str) -> &str {
-    let is_empty = message.trim_end().is_empty();
-    let is_yelled = message == message.to_uppercase();
-    let is_question = message.trim_end().ends_with("?");
-    let contains_characters = message.contains(char::is_alphabetic);
 
-    match (
+    let is_question = message.trim_end().ends_with("?");
+    let is_yelled = message == message.to_uppercase();
+    let contains_letters = message.contains(char::is_alphabetic);
+    let is_empty = message.trim_end().is_empty();
+
+    match(
         is_empty,
         is_question,
         is_yelled,
-        contains_characters,
+        contains_letters
     ) {
-        (true, _, _, _) => RESPONSE_FOR_NOTHING,
-        (_, true, true, true) => RESPONSE_FOR_SHOUTED_QUESTION,
-        (_, false, true, true) => RESPONSE_FOR_SHOUTING,
-        (_, true, _, _) => RESPONSE_FOR_QUESTION,
+        (true, _, _, _) => REPONSE_TO_NOTHING,
+        (_, true, true, true) => RESPONSE_TO_YELLED_QUESTION,
+        (_, false, true, true) => RESPONSE_TO_YELLED,
+        (_, true, _, _) => RESPONSE_TO_QUESTION,
         _ => DEFAULT_RESPONSE,
     }
 
