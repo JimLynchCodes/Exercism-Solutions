@@ -19,4 +19,4 @@ This repo contains some solutions I have finished... and not yet finished. 😁
 
 It doesn't matter to me whether you really care about you code are just after the green squares. 😉
 
-Find the full guide in this blogpost: 
+Find the full guide in this blogpost: http://www.jimlynchcodes.com/blog/how-to-setup-exercism-cli-to-use-your-own-github-repository
