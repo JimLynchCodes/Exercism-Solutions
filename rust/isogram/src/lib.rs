@@ -9,10 +9,10 @@ pub fn check(candidate: &str) -> bool {
     let vec_of_candidate_chars: Vec<char> = candidate_no_dashes.chars().collect();
 
     for letter in vec_of_candidate_chars {
-        if let Some(_) = letters.get(&letter) {
-            return false;
-        } else {
-            letters.insert(letter, true);
+        
+        match letters.get(&letter) {
+            Some(_) => { return false },
+            None => { letters.insert(letter, true); }
         }
     }
     true
