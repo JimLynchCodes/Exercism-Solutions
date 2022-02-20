@@ -1,23 +1,9 @@
-use std::collections::HashMap;
-
-pub fn check(candidate: &str) -> bool {
-    let mut letters = HashMap::<char, bool>::new();
-
-    let clean_candidate_characters: Vec<char> = candidate
+use std::collections::HashSet;
+pub fn check(input: &str) -> bool {
+    let mut s = HashSet::new();
+    input
         .to_lowercase()
-        .split_whitespace()
-        .collect::<String>()
-        .replace("-", "-")
         .chars()
-        .collect();
-
-    for letter in clean_candidate_characters {
-        match letters.get(&letter) {
-            Some(_) => return false,
-            None => {
-                letters.insert(letter, true);
-            }
-        }
-    }
-    true
+        .filter(|c| c.is_alphabetic())
+        .all(|c| s.insert(c))
 }
