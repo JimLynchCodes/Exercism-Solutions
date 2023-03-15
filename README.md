@@ -1,9 +1,9 @@
-# Jim's Exercism.io Solutions!
+# Jim's Exercism.org Solutions!
 
-Version control repo for my Exercism.io solutions.
+Version control repo for my Exercism.org solutions.
 
 
-## Why Exercism.io ?
+## Why Exercism.org ?
 
 - 50+ programming languages.
 
