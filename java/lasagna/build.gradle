@@ -1,5 +1,7 @@
 plugins {
     id "java"
+    id 'jacoco'
+    id 'info.solidsoft.pitest' version '1.9.0'
 }
 
 repositories {
@@ -20,4 +22,20 @@ test {
         showStandardStreams = true
         events = ["passed", "failed", "skipped"]
     }
+}
+
+jacocoTestReport {
+    reports {
+        xml.required = false
+        csv.required = false
+        html.outputLocation = layout.buildDirectory.dir('jacocoHtml')
+    }
+}
+
+pitest {
+    targetClasses = ['LP*']  // by default "${project.group}.*"
+    threads = 4
+    outputFormats = ['XML', 'HTML']
+    timestampedReports = false
+    junit5PluginVersion = '1.2.0'
 }

@@ -1,5 +1,7 @@
+package LP;
+    
 public class Lasagna {
-
+    
     final int PREP_TIME_PER_LAYER = 2;
     
     public int expectedMinutesInOven() {
@@ -18,3 +20,4 @@ public class Lasagna {
         return preparationTimeInMinutes(layers) + minCooked;
     }
 }
+    
