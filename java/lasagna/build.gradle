@@ -33,7 +33,7 @@ jacocoTestReport {
 }
 
 pitest {
-    targetClasses = ['LP*']  // by default "${project.group}.*"
+    targetClasses = ['default']  // by default "${project.group}.*"
     threads = 4
     outputFormats = ['XML', 'HTML']
     timestampedReports = false

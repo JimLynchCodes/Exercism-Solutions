@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LasagnaTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2023-10-09T14:52:36" hostname="Jims-Mac-mini.local" time="0.132">
+<testsuite name="LasagnaTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2023-10-10T02:38:00" hostname="Jims-Mac-mini.local" time="0.112">
   <properties/>
-  <testcase name="The totalTimeInMinutes method calculates the correct value for multiple layers" classname="LasagnaTest" time="0.116"/>
+  <testcase name="The totalTimeInMinutes method calculates the correct value for multiple layers" classname="LasagnaTest" time="0.097"/>
   <testcase name="The totalTimeInMinutes method calculates the correct value for single layer" classname="LasagnaTest" time="0.001"/>
   <testcase name="The remainingMinutesInOven method calculates and returns the correct value" classname="LasagnaTest" time="0.001"/>
   <testcase name="The preparationTimeInMinutes method calculates the correct value for single layer" classname="LasagnaTest" time="0.001"/>
   <testcase name="The expectedMinutesInOven method returns the correct value" classname="LasagnaTest" time="0.001"/>
   <testcase name="Implemented the totalTimeInMinutes method" classname="LasagnaTest" time="0.002"/>
-  <testcase name="Implemented the remainingMinutesInOven method" classname="LasagnaTest" time="0.001"/>
+  <testcase name="Implemented the remainingMinutesInOven method" classname="LasagnaTest" time="0.0"/>
   <testcase name="The preparationTimeInMinutes method calculates the correct value for multiple layers" classname="LasagnaTest" time="0.001"/>
   <testcase name="Implemented the expectedMinutesInOven method" classname="LasagnaTest" time="0.001"/>
   <testcase name="Implemented the preparationTimeInMinutes method" classname="LasagnaTest" time="0.001"/>
