@@ -16,7 +16,7 @@ pub enum Allergen {
 
 impl Allergies {
     pub fn new(score: u32) -> Self {
-        Self { score: score as u8}
+        Self { score: score as u8 }
     }
 
     pub fn is_allergic_to(&self, allergen: &Allergen) -> bool {
