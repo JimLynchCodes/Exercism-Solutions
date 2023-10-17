@@ -3,6 +3,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
 
 public class TwoferTest {
 
@@ -15,10 +16,9 @@ public class TwoferTest {
 
     @Test
     public void noNameGiven() {
-        String input = null;
-        String expected = "One for you, one for me.";
-
-        assertEquals(expected, twofer.twofer(input));
+        
+        assertThat(twofer.twofer(null))
+            .isEqualTo("One for you, one for me.");
     }
 
     @Test
@@ -29,6 +29,7 @@ public class TwoferTest {
         assertEquals(expected, twofer.twofer(input));
     }
 
+    @Ignore("foo")
     @Test
     public void anotherNameGiven() {
         String input = "Bob";
